@@ -60,12 +60,6 @@
   {% include 'nav_menu' %}
   {% include 'bio' %}
 
-  {% if site.subscription_enabled? %}
-    <section class="subscribe">
-      {% form 'subscribe' include_prompt:true %}
-    </section>
-  {% endif %}
-
   <section class="search-archive">
     {% form 'archive' %}
 

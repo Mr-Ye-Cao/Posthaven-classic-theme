@@ -924,6 +924,13 @@ blockquote.posterous_long_quote {
       margin-bottom: 10px; }
       #sidebar #bio h3 a {
         color: inherit; }
+    
+    /* Add this new style for the subscribe section */
+    #sidebar #bio .subscribe {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
   #sidebar h3 {
     color: #4d423f;
     font-size: 22px;
