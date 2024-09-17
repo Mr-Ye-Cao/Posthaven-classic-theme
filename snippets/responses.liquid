@@ -1,13 +1,6 @@
 <div class="post-responses">
   {{ post | share_buttons }}
 
-  {% if site.subscription_enabled? %}
-    <div class="subscribe">
-      <span class="like-text"><strong>Like this post?</strong></span>
-      {% form 'subscribe' include_prompt:true button_class:'subscribe-button' inline:true %}
-    </div>
-  {% endif %}
-
   {% if site.comments_enabled? or post.response_count > 0 %}
     <div class="count">
       <span class="comment-icon"></span>
