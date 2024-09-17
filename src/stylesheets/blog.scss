@@ -354,6 +354,22 @@ $logoWidth: 100px;
   display: none;
 }
 
+.subscribe-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: $primaryColor;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: $primaryDarkerColor;
+    text-decoration: none;
+  }
+}
+
 /*********************************************************
 *  Private Page
 *********************************************************/

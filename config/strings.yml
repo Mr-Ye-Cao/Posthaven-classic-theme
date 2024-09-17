@@ -12,8 +12,7 @@ forms:
   subscribe:
     follow_link: Follow this Posthaven »
     prompt: |
-      <strong>Subscribe by email »</strong>
-      <span>We'll email you when there are new posts here.</span>
+      <strong>Subscribe Now</strong>
     unfollow_link: Unfollow »
 
 read_more: Read more »
