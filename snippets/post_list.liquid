@@ -60,6 +60,12 @@
   {% include 'nav_menu' %}
   {% include 'bio' %}
 
+  {% if site.subscription_enabled? %}
+    <section class="subscribe">
+      {% form 'subscribe' include_prompt:true %}
+    </section>
+  {% endif %}
+
   <section class="search-archive">
     {% form 'archive' %}
 
@@ -69,12 +75,6 @@
   </section>
 
   {% include 'contributors_section' %}
-
-  {% if site.subscription_enabled? %}
-    <section class="subscribe">
-      {% form 'subscribe' include_prompt:true %}
-    </section>
-  {% endif %}
 
   {% if site.tags != empty %}
     <section id="tag_list_menu">
