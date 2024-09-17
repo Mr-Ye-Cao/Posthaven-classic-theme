@@ -3,7 +3,8 @@
 
   {% if site.subscription_enabled? %}
     <div class="subscribe">
-      {% form 'subscribe' include_prompt:true button_class:'subscribe-button' %}
+      <span class="like-text"><strong>Like this post?</strong></span>
+      {% form 'subscribe' include_prompt:true button_class:'subscribe-button' inline:true %}
     </div>
   {% endif %}
 
