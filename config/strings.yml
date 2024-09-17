@@ -12,7 +12,7 @@ forms:
   subscribe:
     follow_link: Follow this Posthaven »
     prompt: |
-      <button class="subscribe-button">Subscribe Now</button>
+      <button class="subscribe-button">Subscribe by Email</button>
     unfollow_link: Unfollow »
 
 read_more: Read more »

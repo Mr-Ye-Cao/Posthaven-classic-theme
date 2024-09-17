@@ -1383,30 +1383,29 @@ li.archive-entry {
     width: 90%; } }
 
 .subscribe-button {
-  background: linear-gradient(to bottom, #3a7bd5, #2b6cc2);
+  background: #3a7bd5;
   color: white;
   border: none;
-  border-radius: 20px;
-  padding: 8px 16px;
-  font-size: 14px;
-  font-weight: 400;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 600; /* Increased from 500 to 600 for thicker text */
   cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  letter-spacing: 0.5px;
   display: inline-block;
   text-decoration: none;
-  line-height: 1.4;
+  line-height: 1.2;
+  text-transform: none; /* Remove uppercase transformation */
 }
 
 .subscribe-button:hover {
-  background: linear-gradient(to bottom, #4a8be5, #3a7bd5);
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  transform: translateY(-1px);
+  background: #4a8be5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .subscribe-button:active {
   transform: translateY(1px);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
