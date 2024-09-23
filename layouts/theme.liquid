@@ -17,9 +17,6 @@
 
   <body id='site_{{ site.id }}'>
     <div id='container'>
-      {{ posthaven.user_menu }}
-
-
       <div id='flash'>
         {% for alert in posthaven.alerts %}
           <div class="alert alert-{{ alert.type }}">
