@@ -1417,3 +1417,24 @@ li.archive-entry {
   box-shadow: none;
   background: #003d7a; /* Darkest blue when active */
 }
+
+.header-flex {
+  display: flex;
+  align-items: center; /* Centers buttons vertically with the title */
+  gap: 120px; /* Adds space between the title and buttons */
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+#header h1 {
+  margin: 0; /* Remove extra margin for tighter alignment */
+}
+
+#language-toggle {
+  display: flex;
+  gap: 10px;
+}
+
+#language-toggle button {
+  padding: 4px 8px;
+  font-size: 14px;
+}

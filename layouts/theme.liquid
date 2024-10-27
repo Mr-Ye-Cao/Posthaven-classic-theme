@@ -27,9 +27,15 @@
 
       {% unless hide_header %}
         <header id='header'>
+        <div class="header-flex">
           <h1>
             <a href="{{ site.url }}">{{ site.name | smarty_pants }}</a>
           </h1>
+          <div id="language-toggle" class="language-tab">
+            <button onclick="toggleLanguage('en')">[Eng]</button>
+            <button onclick="toggleLanguage('zh')">[文]</button>
+          </div>
+        </div>
 
           {% if site.description %}
             <h2>{{ site.description | smarty_pants }}</h2>
@@ -57,5 +63,13 @@
     </div>
 
     {{ posthaven.includes_for_body }}
+
+    <!-- JavaScript for Language Toggle -->
+    <script>
+      function toggleLanguage(lang) {
+          document.querySelectorAll('.content').forEach(el => el.style.display = 'none');
+          document.getElementById(lang).style.display = 'block';
+      }
+    </script>
   </body>
 </html>
