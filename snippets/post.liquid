@@ -37,10 +37,11 @@
   </header>
 
   <div class="post-body" id="post_body_{{ post.id }}">
-    {% if post.url.current_page? %}
-      {{ post.body }}
-    {% else %}
-      {{ post.excerpt_or_body }}
-    {% endif %}
+    <div id="content-en-{{ post.id }}" class="language-content">
+      This is the English content
+    </div>
+    <div id="content-zh-{{ post.id }}" class="language-content" style="display: none;">
+      这是中文内容
+    </div>
   </div>
 {% endif %}
