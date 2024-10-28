@@ -37,18 +37,6 @@
   </header>
 
   <div class="post-body" id="post_body_{{ post.id }}">
-    <!-- English Content -->
-    <div id="content-en-{{ post.id }}" class="language-content">
-      {{ post.body }} <!-- Display the original English content -->
-    </div>
-
-    <!-- Chinese Content -->
-    <div id="content-zh-{{ post.id }}" class="language-content" style="display: none;">
-      {% if post.custom_fields.chinese_content %}
-        {{ post.custom_fields.chinese_content }}
-      {% else %}
-        这条内容中文翻译不存在。
-      {% endif %}
-    </div>
+      {{ post.body }} <!-- This will now contain both English and Chinese divs -->
   </div>
 {% endif %}

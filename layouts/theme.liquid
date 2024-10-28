@@ -67,32 +67,30 @@
     <!-- JavaScript for Language Toggle -->
     <script>
       function toggleLanguage(lang) {
-        // Get all English and Chinese content containers
-        const enContents = document.querySelectorAll('[id^="content-en-"]');
-        const zhContents = document.querySelectorAll('[id^="content-zh-"]');
+        // Get English and Chinese content containers
+        const enContent = document.getElementById('content-en-post');
+        const zhContent = document.getElementById('content-zh-post');
+        
+        if (lang === 'en') {
+          enContent.style.display = 'block';
+          zhContent.style.display = 'none';
+        } else if (lang === 'zh') {
+          enContent.style.display = 'none';
+          zhContent.style.display = 'block';
+        }
 
-        // Loop through each post's language content and toggle visibility
-        enContents.forEach((enContent, index) => {
-          const zhContent = zhContents[index];
-          
-          if (lang === 'en') {
-            enContent.style.display = 'block';
-            zhContent.style.display = 'none';
-          } else if (lang === 'zh') {
-            enContent.style.display = 'none';
-            zhContent.style.display = 'block';
-          }
-        });
-
-        // Highlight the active language button, if the buttons exist
+        // Highlight the active language button
         const engButton = document.querySelector("[onclick='toggleLanguage(\"en\")']");
         const zhButton = document.querySelector("[onclick='toggleLanguage(\"zh\")']");
-
-        if (engButton && zhButton) { // Only proceed if buttons are found
-          engButton.classList.toggle('active', lang === 'en');
-          zhButton.classList.toggle('active', lang === 'zh');
-        }
+        
+        engButton.classList.toggle('active', lang === 'en');
+        zhButton.classList.toggle('active', lang === 'zh');
       }
+
+      // Initialize English as default when page loads
+      document.addEventListener('DOMContentLoaded', function() {
+        toggleLanguage('en');
+      });
     </script>
   </body>
 </html>
