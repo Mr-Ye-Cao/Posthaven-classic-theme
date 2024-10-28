@@ -1,0 +1,9 @@
+<div id="content-en-post" class="language-content">
+  <h2>My Trip to Paris</h2>
+  <p>Last week, I visited the Eiffel Tower for the first time...</p>
+</div>
+
+<div id="content-zh-post" class="language-content" style="display: none;">
+  <h2>我的巴黎之旅</h2>
+  <p>上周，我第一次参观了埃菲尔铁塔...</p>
+</div>
