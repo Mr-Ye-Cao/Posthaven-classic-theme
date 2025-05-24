@@ -1190,6 +1190,9 @@ blockquote.posterous_long_quote {
     .post-responses .responses .upvote span.number {
       font-weight: bold; }
 
+.posthaven-share-links {
+  display: inline-block;
+}
 .posthaven-share-links .posthaven-share-item {
   display: inline-block;
   overflow: visible; }
