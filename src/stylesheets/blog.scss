@@ -373,6 +373,14 @@ $logoWidth: 100px;
   }
 }
 
+.post-share-button {
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 20px;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
 /*********************************************************
 *  Private Page
 *********************************************************/
@@ -443,7 +451,8 @@ $logoWidth: 100px;
   }
 
   .display-date {
-    margin: 30px 0;
+    display: block;
+    margin: 10px 0 30px;
     font-size: 14px; color: $lightAccentColor;
     a { color: $lightAccentColor; }
   }
@@ -552,9 +561,11 @@ $logoWidth: 100px;
 }
 
 .posthaven-share-links {
+  display: inline-block;
   .posthaven-share-item {
     display: inline-block;
     overflow: visible;
+    vertical-align: middle;
   }
   .posthaven-upvote {
     min-width: 90px;
