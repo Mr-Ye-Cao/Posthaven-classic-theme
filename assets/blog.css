@@ -1052,7 +1052,8 @@ blockquote.posterous_long_quote {
       .post .post-title .author a {
         color: #999; }
   .post .display-date {
-    margin: 30px 0;
+    display: block;
+    margin: 10px 0 30px;
     font-size: 14px;
     color: #999; }
     .post .display-date a {
@@ -1422,5 +1423,8 @@ li.archive-entry {
 }
 .post-share-button {
   display: inline-block;
-  margin-left: 10px;
+  margin-left: 0;
+  margin-right: 20px;
+  padding: 4px 10px;
+  border-radius: 999px;
 }
