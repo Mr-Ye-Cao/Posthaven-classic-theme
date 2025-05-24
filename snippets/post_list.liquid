@@ -22,6 +22,14 @@
         {% endunless %}
 
         {{ post | share_buttons }}
+        <a
+          href="https://x.com/intent/post?original_referer={{ site.url | url_encode }}&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Eshare%7Ctwgr%5E&text={{ post.title | url_encode }}&url={{ post.url | url_encode }}"
+          target="_blank"
+          class="subscribe-button post-share-button"
+          style="background-color: black; color: white; border-color: black; text-decoration: none !important;"
+        >
+          Post
+        </a>
 
         {% if site.comments_enabled? and post.response_count > 0 %}
           <span class="response-count">

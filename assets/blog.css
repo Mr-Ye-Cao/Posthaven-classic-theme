@@ -1417,3 +1417,7 @@ li.archive-entry {
   box-shadow: none;
   background: #003d7a; /* Darkest blue when active */
 }
+.post-share-button {
+  display: inline-block;
+  margin-left: 10px;
+}
