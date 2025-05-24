@@ -1196,7 +1196,8 @@ blockquote.posterous_long_quote {
 }
 .posthaven-share-links .posthaven-share-item {
   display: inline-block;
-  overflow: visible; }
+  overflow: visible;
+  vertical-align: middle; }
 .posthaven-share-links .posthaven-upvote {
   min-width: 90px;
   margin-right: 35px; }
